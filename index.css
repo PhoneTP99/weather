@@ -109,7 +109,7 @@ body {
 @media  screen and (max-width: 600px) {
     .header {
         display: grid;
-        grid-template-columns: 100px 1fr 110px;
+        grid-template-columns: 1fr 1fr;
     }
     .middle-section {
         flex: 2;
