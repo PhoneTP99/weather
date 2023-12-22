@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img src="image/weather-icon.png">
+        <div class="title">Weather Forecast</div>
+      </div>
+      <div class="middle-section">
+        <input type="text" 
+               class="location-name" 
+               placeholder="Name"
+               spellcheck="false">
+        <img src="image/search.png" class="search">
+      </div>
+      <div class="right-section">
+        <div class="date">
+          <div class="day"></div>
+          <div class="hour"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+
+      <div class="city-name">
+        <h1>Natmauk</h1>
+      </div>
+
+      <div class="weather-status">
+        <img src="image/clear.png">
+      </div>
+
+      <div class="temperature">
+        <h2 class="degree">22 <span class="degree-unit">&deg;C</span></h2>
+      </div>
+
+      <div class="comment">Time to take a walk</div>
+
+      <div class="detail">
+        <div class="col">
+          <img src="image/humidity.png">
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <img src="image/wind.png">
+          <div>
+            <p class="windspeed">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

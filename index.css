@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgb(47,150,163) , rgb(47,150,163));
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    place-items: center center;
+    height: 40px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.left-section {
+    display: flex;
+    place-items: center center;
+}
+
+
+.left-section > img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.middle-section {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    place-items: center center;
+    cursor: pointer;
+}
+
+.location-name {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.location-name:focus {
+    outline: none;
+}
+
+.location-name::placeholder {
+    color: rgb(27, 28, 30);
+}
+
+.middle-section > img {
+    width: 30px;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+.card {
+    width: clamp(300px, 50%, 400px);
+    height: 300px;
+    margin: 80px auto 0;
+    padding: 10px;
+    color: #fff;
+    background: linear-gradient(135deg , #76e1c5 , #5b548a);
+    border-radius: 20px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.weather-status > img {
+    width: 100px;
+}
+
+.detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col > img {
+    width: 40px ;
+    margin-right: 10px;
+}
+
+
+@media  screen and (max-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 100px 1fr 110px;
+    }
+    .middle-section {
+        flex: 2;
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle-section > input {
+        width: 100%;
+    }
+
+    .right-section {
+        display: flex;
+        justify-content: end;
+    }
+
+    .card {
+        margin-top: 25vh;
+    }
+}
+
